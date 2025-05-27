@@ -46,8 +46,8 @@ export class Fase1 extends Phaser.Scene {
                 key: 'ataqueMago',
                 frames: this.anims.generateFrameNames('magoAtaque', {
                     start: 0,
-                    // end: 2,
-                    end: 0,
+                    end: 2,
+                    // end: 0,
                     prefix: 'AtaqueDoMago ',
                     suffix: '.aseprite'
                 }),
@@ -184,7 +184,7 @@ export class Fase1 extends Phaser.Scene {
         atacar() {
             if (this.estaAtacando) return ; // Evita atacar de novo durante a animação
             this.player.setOffset(10, 25)
-            this.estaAtacando = true;
+            // this.estaAtacando = true;
             this.player.play('ataqueMago', true);
 
 
