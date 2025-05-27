@@ -9,7 +9,7 @@ export class Fase1 extends Phaser.Scene {
         this.load.atlas('magoAtlas', 'assets/sprites/AndarDoMago.png', 'assets/sprites/AndarDoMago.json');
         this.load.image('FlorestaTitulo', 'assets/aFlorestaPerdida.png')
         this.load.image('fireball', 'assets/FIREBALL.png');
-        // this.load.atlas('magoAtaque', 'assets/sprites/AtaqueDoMago.png', 'assets/sprites/AtaqueDoMago.json');
+        this.load.atlas('magoAtaque', 'assets/sprites/AtaqueDoMago.png', 'assets/sprites/AtaqueDoMago.json');
     }
 
   create() {
@@ -41,7 +41,7 @@ export class Fase1 extends Phaser.Scene {
             this.player = this.physics.add.sprite(100, 450,'magoAtlas', 'AndarDoMago 0.aseprite'); // nome da imagem carregada no preload
 
 
-           /* this.anims.create({
+           this.anims.create({
                 key: 'ataqueMago',
                 frames: this.anims.generateFrameNames('magoAtaque', {
                     start: 0,
@@ -51,7 +51,7 @@ export class Fase1 extends Phaser.Scene {
                 }),
                 frameRate: 5,
                 repeat: 0
-            }); */
+            }); 
 
             
             this.estaAtacando = false;
@@ -183,7 +183,7 @@ export class Fase1 extends Phaser.Scene {
             if (this.estaAtacando) return ; // Evita atacar de novo durante a animação
             this.player.setOffset(10, 25)
             this.estaAtacando = true;
-            //this.player.play('ataqueMago', true);
+            this.player.play('ataqueMago', true);
 
 
             const fireball = this.fireballs.get();
