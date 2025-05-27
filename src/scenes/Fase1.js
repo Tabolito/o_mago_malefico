@@ -9,7 +9,8 @@ export class Fase1 extends Phaser.Scene {
         this.load.atlas('magoAtlas', 'assets/sprites/AndarDoMago.png', 'assets/sprites/AndarDoMago.json');
         this.load.image('FlorestaTitulo', 'assets/aFlorestaPerdida.png')
         this.load.image('fireball', 'assets/FIREBALL.png');
-        this.load.atlas('magoAtaque', 'assets/sprites/AtaqueDoMago.png', 'assets/sprites/AtaqueDoMago.json');
+        // this.load.atlas('magoAtaque', 'assets/sprites/AtaqueDoMago.png', 'assets/sprites/AtaqueDoMago.json');
+        this.load.atlas('magoAtaque', 'assets/sprites/cavalo.png', 'assets/sprites/AtaqueDoMago.json');
     }
 
   create() {
@@ -45,7 +46,8 @@ export class Fase1 extends Phaser.Scene {
                 key: 'ataqueMago',
                 frames: this.anims.generateFrameNames('magoAtaque', {
                     start: 0,
-                    end: 2,
+                    // end: 2,
+                    end: 0,
                     prefix: 'AtaqueDoMago ',
                     suffix: '.aseprite'
                 }),
