@@ -33,7 +33,7 @@ export class Fase1 extends Phaser.Scene {
                     end: 3,
                     zeroPad: 0,
                     prefix: 'AndarDoMago ',
-                    suffix: '.aseprite'
+                    suffix: '.png'
                 }),
                 frameRate: 5,
                 repeat: -1
@@ -46,7 +46,7 @@ export class Fase1 extends Phaser.Scene {
                 key: 'ataqueMago',
                 frames: this.anims.generateFrameNames('magoAtaque', {
                     start: 0,
-                    end: 0,
+                    end: 2,
                     // end: 0,
                     prefix: 'AtaqueDoMago ',
                     suffix: '.aseprite'
