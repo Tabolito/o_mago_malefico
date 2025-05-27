@@ -7,7 +7,7 @@ export class Fase1 extends Phaser.Scene {
         this.load.image('Floresta', 'assets/Floresta.png');
         this.load.image('FlorestaChao', 'assets/FlorestaChao.png');
         this.load.atlas('magoAtlas', 'assets/sprites/AndarDoMago.png', 'assets/sprites/AndarDoMago.json');
-        this.load.image('FlorestaTitulo', 'assets/aFlorestaPerdida.png');
+        this.load.image('FlorestaTitulo', 'assets/aFlorestaPerdida.png')
         this.load.image('fireball', 'assets/FIREBALL.png');
         // this.load.atlas('magoAtaque', 'assets/sprites/AtaqueDoMago.png', 'assets/sprites/AtaqueDoMago.json');
     }
@@ -18,7 +18,7 @@ export class Fase1 extends Phaser.Scene {
             fase2.setScale(0.3);
 
 
-            this.chao = this.physics.add.staticImage(400, 300, 'FlorestaChao');
+            this.chao = this.physics.add.staticImage(400, 300, 'FlorestaChao')
          
             this.background = this.add.tileSprite(400, 300, 800, 600, 'Floresta');
 
@@ -84,7 +84,7 @@ export class Fase1 extends Phaser.Scene {
 
             this.cursors = this.input.keyboard.createCursorKeys();
 
-            this.attackKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
+            this.attackKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A)
 
             this.spaceKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 
@@ -124,7 +124,7 @@ export class Fase1 extends Phaser.Scene {
 
             if (Phaser.Input.Keyboard.JustDown(this.spaceKey) && this.player.body.onFloor()) {
                 this.player.setVelocityY(-500);
-                this.player.setOffset(7, 14);
+                this.player.setOffset(7, 14)
                 
             }
 
@@ -181,7 +181,7 @@ export class Fase1 extends Phaser.Scene {
 
         atacar() {
             if (this.estaAtacando) return ; // Evita atacar de novo durante a animação
-            this.player.setOffset(10, 25);
+            this.player.setOffset(10, 25)
             this.estaAtacando = true;
             //this.player.play('ataqueMago', true);
 
@@ -205,4 +205,3 @@ export class Fase1 extends Phaser.Scene {
      
 
 }
-
