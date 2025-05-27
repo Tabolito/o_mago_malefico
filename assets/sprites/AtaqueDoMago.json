@@ -1,12 +1,12 @@
 {
   "frames": {
     "AtaqueDoMago 0.aseprite": {
-      "frame": { "x": 000, "y": 000, "w": 2500, "h": 2500 },
+      "frame": { "x": -100, "y": -100, "w": 2500, "h": 2500 },
       "rotated": false,
       "trimmed": false,
-      "spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 2500, "h": 2500 },
       "sourceSize": { "w": 100, "h": 100 },
-      "duration": 100
+      "duration": 1000
     },
     "AtaqueDoMago 1.aseprite": {
       "frame": { "x": 100, "y": 0, "w": 100, "h": 100 },
