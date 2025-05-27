@@ -1,7 +1,7 @@
 {
   "frames": {
     "AtaqueDoMago 0.aseprite": {
-      "frame": { "x": 1000, "y": 1000, "w": 100, "h": 100 },
+      "frame": { "x": 000, "y": 000, "w": 2500, "h": 2500 },
       "rotated": false,
       "trimmed": false,
       "spriteSourceSize": { "x": 0, "y": 0, "w": 100, "h": 100 },
