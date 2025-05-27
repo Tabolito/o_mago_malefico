@@ -4,7 +4,7 @@ export class Fase1 extends Phaser.Scene {
   }
 
   preload() {
-        this.load.image('Floresta', 'assets/Floresta.png');
+        this.load.image('Floresta', 'assets/Floresta.jpeg');
         this.load.image('FlorestaChao', 'assets/FlorestaChao.png');
         this.load.atlas('magoAtlas', 'assets/sprites/AndarDoMago.png', 'assets/sprites/AndarDoMago.json');
         this.load.image('FlorestaTitulo', 'assets/aFlorestaPerdida.png')
